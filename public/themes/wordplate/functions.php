@@ -54,3 +54,6 @@ add_filter('excerpt_more', function () {
 add_filter('excerpt_length', function () {
     return 101;
 });
+
+// Register superuser custom post type.
+require get_template_directory().'/includes/post-types/super-user.php';
