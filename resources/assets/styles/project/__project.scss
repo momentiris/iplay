@@ -1,0 +1,25 @@
+@import 'stylesheet';
+@import 'typography';
+
+@mixin bp($point) {
+  @if $point == small {
+    @media (max-width: 450px) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: 900px) { @content; }
+  }
+  @else if $point == large {
+    @media (min-width: 1250px)  { @content; }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+}
