@@ -1,0 +1,44 @@
+svg {
+
+  transform: scale(.5);
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  left: -80px;
+  top: -62px;
+
+}
+
+	.i, .p, .la, .y  path {
+		stroke: black;
+		stroke-width: .5px;
+
+	}
+
+
+	.firstdot, .seconddot, .thirddot {
+		transform: translateX(0px);
+
+		fill: black;
+
+	}
+	.firstdot {
+		opacity: 1;
+		transition: all .1s ease .8s;
+	}
+	.seconddot {
+		opacity: .75;
+		transition: all .1s ease .6s;
+	}
+	.thirddot {
+		opacity: .5;
+		transition: all  100ms ease .4s;
+	}
+	.animate {
+		opacity: 0;
+		transform: translateX(-20%)
+	}
+
+.logo_menu--active {
+  fill: white;
+}

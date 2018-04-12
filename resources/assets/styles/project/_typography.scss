@@ -2,6 +2,13 @@ $font-stack: 'Helvetica Neue';
 
 h1, h2, h3, h4, h5, p, a {
   font-family: $font-stack;
+
+}
+h1 {
+  font-weight: 500;
+}
+h3 {
+  font-weight: 400;
 }
 button {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
