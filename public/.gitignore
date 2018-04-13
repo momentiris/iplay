@@ -1,6 +1,7 @@
 languages
 mu-plugins
 plugins/*
+!plugins/advanced-custom-feilds-pro
 !plugins/index.php
 upgrade
 uploads
