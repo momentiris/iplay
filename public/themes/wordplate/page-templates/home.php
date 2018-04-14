@@ -24,10 +24,13 @@
 
     <section class="home__superusers">
         <div class="superusers__slider">
-            <?php foreach ($superUsers as $superUser): ?>
 
+            <?php foreach ($superUsers as $superUser): ?>
+                <?php var_dump( $superUser); ?>
                 <div class="superuser__slide">
-                    <h3><?php the_field('superuser', $superUser->ID); ?></h3>
+
+                    <h3><?php the_field('superuser_name', $superUser->ID); ?></h3>
+                    <span><?php the_field('superuser_quote') ?></span>
 
 
                 </div>

@@ -1,0 +1,19 @@
+.home__superusers {
+  height: 135vh;
+  width: 100vw;
+  background: $white;
+
+  .superusers__slider {
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 100%;
+    .superuser__slide {
+      background: hotpink;
+      width: 200px;
+      height: 200px;
+      margin: 5px;
+    }
+  }
+}

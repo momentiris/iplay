@@ -3,10 +3,7 @@
 declare(strict_types=1);
 
 $fields = [
-    acf_group([
-    'name' => 'superuser',
-    'label' => 'Super User',
-    'sub_fields' => [
+
         acf_text([
             'name' => 'superuser_name',
              'label' => 'Name',
@@ -24,8 +21,7 @@ $fields = [
                // 'required' => true,
                'return_format' => 'url',
              ]),
-        ]
-    ]),
+
 ];
 
 $location = [[acf_location('post_type', 'superuser')]];
