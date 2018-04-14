@@ -43,6 +43,26 @@
 
         <div class="display_mobile_image">
         </div>
-    </section>
+    </section><!-- branding -->
+
+    <section class"communications">
+        <h1 class="header"> Own your communication</h1>
+        <p class="content">Turn off comments, posts on all your social medias from Iplay Sport or just share it with your teammates</p>
+
+        <button class="role">What's your role?</button>
+
+        <div class="display_mobile_image">
+        </div>
+    </section><!-- communications -->
+
+    <section class"insurance">
+        <h1 class="header">Insurance,Discover job openings, Financial advisement</h1>
+        <p class="content">Discover the best insurance for you, find extra income or get investment advisement</p>
+
+        <button class="role">What's your role?</button>
+
+        <div class="display_mobile_image">
+        </div>
+    </section><!-- insurance -->
 
 <?php get_footer(); ?>
