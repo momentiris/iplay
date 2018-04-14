@@ -28,8 +28,6 @@
 
                 <div class="superuser__slide">
                     <h3><?php the_field('superuser', $superUser->ID); ?></h3>
-
-
                 </div>
 
             <?php endforeach; ?>
@@ -37,5 +35,14 @@
         </div>
     </section><!-- home__superusers -->
 
+    <section class"branding">
+        <h1 class="branding_header"> Build your brand </h1>
+        <p class="branding_content">Iplay Sport have an unique solution that will help you build your brand </p>
+
+        <button class="role">What's your role?</button>
+
+        <div class="display_mobile_image">
+        </div>
+    </section>
 
 <?php get_footer(); ?>
