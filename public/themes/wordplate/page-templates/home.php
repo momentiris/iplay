@@ -45,32 +45,32 @@
     </section><!-- home__superusers -->
 
     <section class"branding">
-        <h1 class="branding_header"> Build your brand </h1>
-        <p class="branding_content">Iplay Sport have an unique solution that will help you build your brand </p>
+        <h1 class="branding_header"><?php the_field('branding_header'); ?></h1>
+        <p class="branding_content"><?php the_field('branding_content');?></p>
 
         <button class="role">What's your role?</button>
 
-        <div class="display_mobile_image">
+        <div class="mobile_image">
         </div>
     </section><!-- branding -->
 
     <section class"communications">
-        <h1 class="header"> Own your communication</h1>
-        <p class="content">Turn off comments, posts on all your social medias from Iplay Sport or just share it with your teammates</p>
+        <h1 class="header"><?php the_field('communications_header')?></h1>
+        <p class="content"><?php the_field('communications_content')?></p>
 
         <button class="role">What's your role?</button>
 
-        <div class="display_mobile_image">
+        <div class="mobile_image">
         </div>
     </section><!-- communications -->
 
     <section class"insurance">
-        <h1 class="header">Insurance,Discover job openings, Financial advisement</h1>
-        <p class="content">Discover the best insurance for you, find extra income or get investment advisement</p>
+        <h1 class="header"><?php the_field('insurance_header')?></h1>
+        <p class="content"><?php the_field('insurance_content')?></p>
 
         <button class="role">What's your role?</button>
 
-        <div class="display_mobile_image">
+        <div class="mobile_image">
         </div>
     </section><!-- insurance -->
 
