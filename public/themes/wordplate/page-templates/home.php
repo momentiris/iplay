@@ -48,7 +48,7 @@
         </section>
     </section><!-- home__superusers -->
 <section class="sections_home">
-    <section class"branding">
+    <section class"branding sections">
         <h1 class="branding_header"><?php the_field('branding_header'); ?></h1>
         <p class="branding_content"><?php the_field('branding_content');?></p>
 
@@ -58,7 +58,7 @@
         </div>
     </section><!-- branding -->
 
-    <section class"communications">
+    <section class"communications sections">
         <h1 class="header"><?php the_field('communications_header')?></h1>
         <p class="content"><?php the_field('communications_content')?></p>
 
@@ -68,7 +68,7 @@
         </div>
     </section><!-- communications -->
 
-    <section class"insurance">
+    <section class"insurance sections">
         <h1 class="header"><?php the_field('insurance_header')?></h1>
         <p class="content"><?php the_field('insurance_content')?></p>
 

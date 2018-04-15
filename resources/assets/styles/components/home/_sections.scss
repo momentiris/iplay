@@ -1,7 +1,5 @@
 .sections_home
 {
-  height: 120vh;
-  width: 100vw;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -9,11 +7,16 @@
   border: 2px solid black;
   text-align: center;
   padding-top: 7rem;
-    .branding .insurance
+    .branding, .insurance
     {
       display: flex;
       flex-flow: column;
       align-items: center;
       background: $lightgreen;
+    }
+    .sections
+    {
+      height:120vh;
+      width:100vw;
     }
   }
