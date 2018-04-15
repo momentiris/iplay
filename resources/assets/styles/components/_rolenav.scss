@@ -8,9 +8,9 @@
   padding-left: 2rem;
   padding-top: 5rem;
 
-  h2 {
+  h2
+  {
     color: $white;
-
   }
   .role__nav-intro {
     display: flex;
@@ -47,11 +47,8 @@
       color: $white;
       font-weight: 400;
       width: 90%;
-
-
     }
   }
-
 
   .toggle_role_nav, .role_back {
     color: $white;

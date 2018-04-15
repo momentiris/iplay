@@ -60,9 +60,14 @@ goBack.addEventListener('click', (e) => {
     roleNavIntro.classList.remove('hidden__inside');
     if (role.classList.contains('role--active')) {
       role.classList.remove('role--active');
+<<<<<<< HEAD
       role.style.cssText = "";
     } else {
       role.classList.remove('hidden__inside');
+=======
+      role.style.cssText = 'transform: translateY(0px);transition-delay: 0.3s';
+
+>>>>>>> cdf543823d7ca7d237b1e1650bc4fbf555796743
     }
   })
 })
