@@ -8,7 +8,8 @@ const submenu = document.querySelector('.sub-menu');
 console.log(submenu);
 
 
-hamburger.addEventListener('click', () => {
+hamburger.addEventListener('click', (e) => {
+  console.log(e.target);
   hamburgerInner.classList.toggle('hamburger-inner_active');
   menu.classList.toggle('menu--active');
   navlinks.forEach(item => {

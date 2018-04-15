@@ -27,12 +27,36 @@
     margin-top: 2rem;
   }
 }
-.display_mobile_image {
-  opacity: .5;
-  width: 80vw;
-  height: 60vh;
-  background: grey;
+.display_mobile_image_first, .display_mobile_image_second {
+  transition: all .5s ease;
+  transform: translateX(0px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: -30%;
+
+}
+.display_mobile_image_first {
+  width: 50vw;
+  height: 70vh;
+  position: absolute;
+  z-index: 2;
+  left: 8%;
+  background-image: url('/themes/wordplate/assets/media/Bella.png');
+
+
+}
+.display_mobile_image_second {
+  width: 65vw;
+  height: 80vh;
   position: absolute;
   z-index: 1;
-  bottom: -25%;
+  right: 4%;
+  background-image: url('/themes/wordplate/assets/media/Choose_Your_Role.png');
+
+}
+
+.hide {
+  transform: translateY(50px);
+  opacity: 0;
 }

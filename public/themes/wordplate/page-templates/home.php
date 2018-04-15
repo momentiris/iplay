@@ -9,9 +9,8 @@
             <span>GET THE APP</span>
         </div>
 
-        <div class="display_mobile_image">
-
-        </div>
+        <div class="display_mobile_image_first hide"></div>
+        <div class="display_mobile_image_second hide"></div>
     </section><!-- hero__wrap -->
 
     <?php $args = array(
@@ -23,25 +22,30 @@
     $superUsers = get_posts($args); ?>
 
     <section class="home__superusers">
+        <section class="superusers__info">
+            <h2>Our Superusers</h2>
+            <p>We’re working close with professional athletes in order to get the best possible experience for everyone. Iplay is made for real athlethes, by real atheletes.</p>
+        </section>
         <div class="superusers__slider">
 
-            <?php foreach ($superUsers as $superUser): ?>
-                <?php var_dump( $superUser); ?>
-                <div class="superuser__slide">
-<<<<<<< HEAD
-
+            <?php foreach ($superUsers as $key => $superUser): ?>
+                <div data-position="<?php echo $key ?>" data-positionnext="<?php echo ($key + 1) == 3 ? 0 : ($key + 1); ?>"class="superuser__slide" style="background-image: url('<?php the_field('superuser_image', $superUser->ID); ?>')">
                     <h3><?php the_field('superuser_name', $superUser->ID); ?></h3>
                     <span><?php the_field('superuser_quote') ?></span>
-
-
-=======
-                    <h3><?php the_field('superuser', $superUser->ID); ?></h3>
->>>>>>> e2e101c8c5f31b3f845086228a6e29b4d83c28f0
+                    <div class="superuser__player__info">
+                    </div>
                 </div>
 
             <?php endforeach; ?>
 
-        </div>
+        </div> <!-- superusers__slider -->
+
+        <section class="superuser__end">
+            <h2>Are you a professional?</h2>
+            <div class="button">
+                <span>Read more about Iplay benefits you.</span>
+            </div>
+        </section>
     </section><!-- home__superusers -->
 
     <section class"branding">
@@ -50,8 +54,8 @@
 
         <button class="role">What's your role?</button>
 
-        <div class="display_mobile_image">
-        </div>
+        <!-- <div class="display_mobile_image"> -->
+        <!-- </div> -->
     </section><!-- branding -->
 
     <section class"communications">
@@ -60,8 +64,8 @@
 
         <button class="role">What's your role?</button>
 
-        <div class="display_mobile_image">
-        </div>
+        <!-- <div class="display_mobile_image">
+        </div> -->
     </section><!-- communications -->
 
     <section class"insurance">
@@ -70,8 +74,8 @@
 
         <button class="role">What's your role?</button>
 
-        <div class="display_mobile_image">
-        </div>
+        <!-- <div class="display_mobile_image">
+        </div> -->
     </section><!-- insurance -->
 
 <?php get_footer(); ?>

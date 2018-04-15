@@ -21,12 +21,12 @@ mix.setPublicPath(`public/themes/${theme}/assets`);
 mix.js('resources/assets/scripts/app.js', 'scripts');
 mix.sass('resources/assets/styles/app.scss', 'styles');
 
-// mix.browserSync({
-//   proxy: 'wordplate.test',
-//   files: [
-//     './public/**'
-//   ]
-// });
+mix.browserSync({
+  proxy: 'wordplate.test',
+  files: [
+    './public/**'
+  ]
+});
 
 mix.sourceMaps();
 mix.version();

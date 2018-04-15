@@ -16,7 +16,7 @@ $fields = [
              'maxlength' => 75,
         ]),
         acf_image([
-               'name' => 'icon',
+               'name' => 'superuser_image',
                'label' => 'Image',
                // 'required' => true,
                'return_format' => 'url',

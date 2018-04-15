@@ -9,6 +9,6 @@ npm-debug.log
 Vagrantfile
 vendor
 public/assets/fonts
-public/assets/media
+
 
 \.env\.example

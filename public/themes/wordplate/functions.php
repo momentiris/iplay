@@ -64,7 +64,12 @@ require get_template_directory().'/includes/acf/home.php';
 // Register acf for superusers.
 require get_template_directory().'/includes/acf/superusers.php';
 
+add_action( 'wp_head', 'inc_manifest_link' );
 
+// Creates the link tag
+function inc_manifest_link() {
+        echo '<link rel="manifest" href="/manifest.json">';
+}
 
 // Register tags for superusers CPT.
 add_action( 'init', 'gp_register_taxonomy_for_object_type' );
