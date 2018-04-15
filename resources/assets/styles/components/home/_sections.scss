@@ -5,15 +5,36 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 7rem;
+
     .branding, .insurance
     {
-      background: $lightgreen;
+      background-color: $lightgreen;
+    }
+    .insurance
+    {
+      padding:15px;
     }
     .sections
     {
-      height:120vh;
+      display: flex;
+      align-items: center;
+      flex-flow: column;
+      height:80vh;
       width:100vw;
-      border: 2px solid black;
+      padding-top: 50px;
+        p
+        {
+          font-weight: 500;
+          width: 85%;
+          line-height: 1.45;
+        }
+        .role
+        {
+          text-decoration: underline;
+          font-weight: 500;
+          height:50px;
+          width: 85%;
+          line-height: 1.45;
+        }
     }
   }
