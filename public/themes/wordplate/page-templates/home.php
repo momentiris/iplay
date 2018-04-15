@@ -69,33 +69,38 @@
 
 <div class="sections_home">
     <section class="branding sections">
-        <h1 class="branding_header"><?php the_field('branding_header'); ?></h1>
-        <p class="branding_content"><?php the_field('branding_content');?></p>
+        <h1><?php the_field('branding_header'); ?></h1>
+        <p><?php the_field('branding_content');?></p>
 
         <button class="role">What's your role?</button>
 
-        <div class="mobile_image">
+        <div class="mobile_image b">
         </div>
     </section><!-- branding -->
 
     <section class="communications sections">
-        <h1 class="header"><?php the_field('communications_header')?></h1>
-        <p class="content"><?php the_field('communications_content')?></p>
+        <h1><?php the_field('communications_header')?></h1>
+        <p><?php the_field('communications_content')?></p>
 
         <button class="role">What's your role?</button>
 
-        <div class="mobile_image">
+        <div class="mobile_image c">
         </div>
     </section><!-- communications -->
 
     <section class="insurance sections">
-        <h1 class="header"><?php the_field('insurance_header')?></h1>
-        <p class="content"><?php the_field('insurance_content')?></p>
+        <h1><?php the_field('insurance_header')?></h1>
+        <p><?php the_field('insurance_content')?></p>
 
         <button class="role">What's your role?</button>
 
-        <div class="mobile_image">
+        <div class="mobile_image i">
         </div>
     </section><!-- insurance -->
 </div><!-- sections_home -->
+<div class="newsletter">
+    <p> Subscribe to our newsletter and get latest news and offers.</p>
+<input class="email" type="email" name="email" placeholder="email@adress.com"> </input>
+</div>
+
 <?php get_footer(); ?>

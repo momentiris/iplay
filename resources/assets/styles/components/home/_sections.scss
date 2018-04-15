@@ -10,10 +10,16 @@
     {
       background-color: $lightgreen;
     }
+    .communications
+    {
+      background-color: $white;
+    }
     .insurance
     {
-      padding:15px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
+
     .sections
     {
       display: flex;
@@ -28,13 +34,41 @@
           width: 85%;
           line-height: 1.45;
         }
-        .role
-        {
-          text-decoration: underline;
-          font-weight: 500;
-          height:50px;
-          width: 85%;
-          line-height: 1.45;
-        }
+    }
+    .mobile_image
+    {
+      background-size: cover;
+      background-position:top;
+      background-repeat: no-repeat;
+      width:80vw;
+      height:80vh;
+    }
+    .b
+    {
+      background-image: url('/themes/wordplate/assets/media/Brand.png');
+    }
+
+    .i
+    {
+      background-image: url('/themes/wordplate/assets/media/Insurance.png');
+    }
+    .c
+    {
+      background-image: url('/themes/wordplate/assets/media/Communications.png');
+    }
+  }
+  .newsletter
+  {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    height:20vh;
+    width:100vw;
+    padding-top: 50px;
+    p
+    {
+      font-weight: 500;
+      width: 85%;
+      line-height: 1.45;
     }
   }

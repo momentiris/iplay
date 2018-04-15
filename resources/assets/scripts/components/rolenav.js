@@ -39,8 +39,8 @@ goBack.addEventListener('click', (e) => {
   roles.forEach(role => {
     if (role.classList.contains('role--active')) {
       role.classList.remove('role--active');
-      role.style.cssText = 'transform: translateY(0px);transition-delay: 0.3s;
-      ';
+      role.style.cssText = 'transform: translateY(0px);transition-delay: 0.3s';
+
     }
   })
 
