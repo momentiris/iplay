@@ -1,7 +1,25 @@
 <?php /* Template Name: Home */ ?>
 
 <?php get_header(); ?>
+    <div class="role__nav nav_nav">
+        <div class="role__nav-intro">
+            <h1>Whats your role?</h1>
+            <span class="line"></span>
+        </div>
 
+        <div class="role__info role__info-hide">
+
+        </div>
+        <h2 class="hidden role__athlete">I'm an athlete.</h2>
+        <h2 class="hidden role__influencer">I'm an influencer.</h2>
+        <h2 class="hidden role__coach">I'm a coach.</h2>
+        <h2 class="hidden role__scout">I'm a scout.</h2>
+        <h2 class="hidden role__fan">I'm a fan.</h2>
+        <span class="role_back">
+            Go back ←
+        </span>
+        <span class="toggle_role_nav">Close x </span>
+    </div>
     <section class="hero__wrap">
         <h1><?php the_field('hero_header') ?></h2>
         <h3><?php the_field('under_hero_header') ?></h4>
@@ -10,7 +28,7 @@
         </div>
 
         <div class="display_mobile_image_first hide"></div>
-        <div class="display_mobile_image_second hide"></div>
+        <div class="display_mobile_image_second hide "></div>
     </section><!-- hero__wrap -->
 
     <?php $args = array(
@@ -19,6 +37,7 @@
         "post_type"        => "superuser",
         "post_status"      => "publish"
     );
+
     $superUsers = get_posts($args); ?>
 
     <section class="home__superusers">
@@ -42,8 +61,8 @@
 
         <section class="superuser__end">
             <h2>Are you a professional?</h2>
-            <div class="button">
-                <span>Read more about Iplay benefits you.</span>
+            <div class="button role_button">
+                <span>Read more about how Iplay benefits you.</span>
             </div>
         </section>
     </section><!-- home__superusers -->

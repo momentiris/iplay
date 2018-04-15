@@ -1,5 +1,5 @@
 const hamburger = document.querySelector('.hamburger');
-const hamburgerInner = hamburger.querySelector('.hamburger-inner');
+const hamburgerInner = hamburger.querySelector('.inner_ham');
 const menu = document.querySelector('.nav_nav');
 const navlinks = [...menu.querySelectorAll('.menu-item')];
 
@@ -9,7 +9,6 @@ console.log(submenu);
 
 
 hamburger.addEventListener('click', (e) => {
-  console.log(e.target);
   hamburgerInner.classList.toggle('hamburger-inner_active');
   menu.classList.toggle('menu--active');
   navlinks.forEach(item => {

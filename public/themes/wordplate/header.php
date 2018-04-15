@@ -13,13 +13,11 @@
 
     <header>
 
-        <button ontouchstart="return true" class="hamburger hamburger--spin" type="button">
+        <button ontouchstart="return true" class="hamburger hamburger--spin main_nav_hamburger" type="button">
             <span class="hamburger-box" >
-                <span class="hamburger-inner"></span>
+                <span class="hamburger-inner inner_ham"></span>
             </span>
         </button>
-
-
 
     <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg"  width="300.89px" height="150.28px" viewBox="270.5 222.5 300.89 150.28">
         <g class="dots">
