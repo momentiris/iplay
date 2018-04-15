@@ -40,6 +40,7 @@
     h2 {
       color: $white;
       font-weight: 500;
+
     }
     p {
       line-height: 1.5;
@@ -98,4 +99,11 @@
 .role__info-hide {
   transform: translateY(20px);
   opacity: 0;
+}
+.role--active {
+  color: #44bb58;
+  text-decoration: underline;
+  font-size: 2rem;
+  transition-delay: .2s;
+
 }

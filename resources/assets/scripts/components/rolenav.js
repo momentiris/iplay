@@ -35,6 +35,14 @@ buttons.forEach(button => {
 
 const goBack = document.querySelector('.role_back');
 goBack.addEventListener('click', (e) => {
+  roleInfo.classList.add('role__info-hide');
+  roles.forEach(role => {
+    if (role.classList.contains('role--active')) {
+      role.classList.remove('role--active');
+      role.style.cssText = 'transform: translateY(0px);transition-delay: 0.3s;
+      ';
+    }
+  })
 
 })
 const roleNavIntro = roleSection.querySelector('.role__nav-intro');
@@ -54,10 +62,7 @@ roles.forEach((role, index) => {
         e.target.style.cssText = `
         transform: translateY(
           -${e.target.getBoundingClientRect().top - roleNavY}px);
-        color: #44bb58;
-        text-decoration: underline;
-        font-size: 2rem;
-        transition-delay: .2s;
+
           `;
           roleInfo.innerHTML = roleText;
       roleInfo.classList.remove('role__info-hide');
