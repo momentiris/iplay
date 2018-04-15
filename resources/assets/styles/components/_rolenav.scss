@@ -36,7 +36,7 @@
     top: 10rem;
     padding-right: 1rem;
     pointer-events: none;
-    transition: all .3s ease .5s;
+    transition: all .3s ease;
     h2 {
       color: $white;
       font-weight: 500;
@@ -101,7 +101,7 @@
   opacity: 0;
 }
 .role--active {
-  color: #44bb58;
+  color: #44bb58 !important;
   text-decoration: underline;
   font-size: 2rem;
   transition-delay: .2s;
