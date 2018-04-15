@@ -1,11 +1,64 @@
-.footer
-{
+footer {
+  background-color: $black;
+  color: $white;
   width:100vw;
-  height:40vh;
-  display:inline;
-  color: black;
+  height:45vh;
+  font-family: $font-stack;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  .foot__wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+
+    div {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 1rem;
+
+      h4 {
+        color: grey;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .followus {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    color: grey;
+  }
+  .social_fb, .social_ig, .social_tw {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 1rem;
+  }
+  .social__wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 1.5rem;
+  }
+  .social_fb {
+    background-image: url('/themes/wordplate/assets/media/S-Facebook.svg');
+  }
+  .social_ig {
+    background-image: url('/themes/wordplate/assets/media/Instagram.svg');
+  }
+  .social_tw {
+    background-image: url('/themes/wordplate/assets/media/C-Twitter.svg');
+  }
+
 }
-.footer ul
-{
+footer ul {
+  padding: 0;
   list-style-type: none;
+  line-height: 2;
 }

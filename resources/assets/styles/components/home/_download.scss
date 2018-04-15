@@ -1,0 +1,38 @@
+.home__download {
+  width: 100vw;
+  height: 60vh;
+  background-image: url('/themes/wordplate/assets/media/handball.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:10% 10%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  h1,p {
+    color: $white;
+    text-align: center;
+  }
+  h1 {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  p {
+    font-weight: 400;
+    width: 90%;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+  }
+  .badge__wrap {
+    display: flex;
+    margin-bottom: 1rem;
+    img {
+      width: 175px;
+    }
+    .apple {
+      width: 175px;
+      padding: .6rem;
+    }
+  }
+
+}

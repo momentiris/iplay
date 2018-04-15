@@ -21,7 +21,7 @@
         <span class="toggle_role_nav">Close x </span>
     </div>
     <section class="hero__wrap">
-        <h1><?php the_field('hero_header') ?></h2>
+        <h1><?php the_field('hero_header') ?></h1>
         <h3><?php the_field('under_hero_header') ?></h4>
         <div class="button">
             <span>GET THE APP</span>
@@ -72,7 +72,7 @@
         <h1><?php the_field('branding_header'); ?></h1>
         <p><?php the_field('branding_content');?></p>
 
-        <button class="role">What's your role?</button>
+        <p class="role role_button">What's your role?</p>
 
         <div class="mobile_image b">
         </div>
@@ -82,7 +82,7 @@
         <h1><?php the_field('communications_header')?></h1>
         <p><?php the_field('communications_content')?></p>
 
-        <button class="role">What's your role?</button>
+        <p class="role role_button">What's your role?</p>
 
         <div class="mobile_image c">
         </div>
@@ -92,15 +92,26 @@
         <h1><?php the_field('insurance_header')?></h1>
         <p><?php the_field('insurance_content')?></p>
 
-        <button class="role">What's your role?</button>
+        <p class="role role_button">What's your role?</p>
 
         <div class="mobile_image i">
         </div>
     </section><!-- insurance -->
 </div><!-- sections_home -->
 <div class="newsletter">
+    <h1>Newsletter</h1>
     <p> Subscribe to our newsletter and get latest news and offers.</p>
-<input class="email" type="email" name="email" placeholder="email@adress.com"> </input>
+    <input class="email" type="email" name="email" placeholder="email@adress.com"> </input>
 </div>
+<section class="home__download">
+    <h1>Download the app for free</h1>
+    <p>Iplay offers athletes support before, during & after their sporting career through a variety of services depending on where you are in your career.</p>
+    <div class="badge__wrap">
+        <a href='https://play.google.com/store/apps/details?id=com.iplay&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
 
+        <a href="https://itunes.apple.com/se/app/iplay-sport/id1068927526?l=en&mt=8"> <img class="apple"alt="Get it on Apple Store" src="https://www.designpieces.com/wp-content/uploads/2016/02/download-on-the-app-store.png"/></a>
+    </div>
+
+
+</section>
 <?php get_footer(); ?>

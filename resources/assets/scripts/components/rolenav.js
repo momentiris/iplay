@@ -25,9 +25,10 @@ toggleExit.addEventListener('click', () => {
       roleInfo.style.transitionDelay = "0s";
       roleInfo.classList.add('role__info-hide');
       roleNavIntro.classList.add('hidden__inside');
+
       if (role.classList.contains('role--active')) {
         role.classList.remove('role--active');
-        // role.style.cssText = "transform: translateY(0px);";
+        role.style.cssText = "";
       } else {
         role.classList.remove('hidden__inside');
 
@@ -71,7 +72,6 @@ roles.forEach((role, index) => {
   role.addEventListener('click', e => {
     roleNavIntro.classList.add('hidden__inside');
 
-    console.log(e.target);
     roles.forEach(allButTarget => {
       goBack.style.opacity = "1";
       if (e.target.className != allButTarget.className) {
@@ -82,9 +82,10 @@ roles.forEach((role, index) => {
         e.target.style.cssText = `
         transform: translateY(
           -${e.target.getBoundingClientRect().top - roleNavY}px);
+
           `;
           roleInfo.innerHTML = roleText;
-          roleInfo.style.transitionDelay = ".2s";
+          roleInfo.style.transitionDelay = ".4s";
           roleInfo.classList.remove('role__info-hide');
       }
     })
