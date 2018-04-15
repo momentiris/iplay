@@ -47,7 +47,7 @@
             </div>
         </section>
     </section><!-- home__superusers -->
-
+<section class="sections_home">
     <section class"branding">
         <h1 class="branding_header"><?php the_field('branding_header'); ?></h1>
         <p class="branding_content"><?php the_field('branding_content');?></p>
@@ -77,5 +77,5 @@
         <div class="mobile_image">
         </div>
     </section><!-- insurance -->
-
+</section><!-- sections_home -->
 <?php get_footer(); ?>
