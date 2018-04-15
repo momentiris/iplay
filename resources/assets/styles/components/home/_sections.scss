@@ -1,0 +1,40 @@
+.sections_home
+{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+    .branding, .insurance
+    {
+      background-color: $lightgreen;
+    }
+    .insurance
+    {
+      padding:15px;
+    }
+    .sections
+    {
+      display: flex;
+      align-items: center;
+      flex-flow: column;
+      height:80vh;
+      width:100vw;
+      padding-top: 50px;
+        p
+        {
+          font-weight: 500;
+          width: 85%;
+          line-height: 1.45;
+        }
+        .role
+        {
+          text-decoration: underline;
+          font-weight: 500;
+          height:50px;
+          width: 85%;
+          line-height: 1.45;
+        }
+    }
+  }
