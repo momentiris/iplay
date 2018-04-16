@@ -9,59 +9,109 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
-  h1 {
-    margin-top: 6rem;
-    margin-bottom: .5rem;
-    font-size: 2rem;
-    width: 90%;
-      text-align: center;
+  @include bp(medium) {
+    height: 60vh;
+
+  }
+  .hero__intro__wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    @include bp(medium) {
+    align-items: flex-start;
+    }
+    h1,h3 {
+      @include bp(medium) {
+        text-align: left;
+      }
+    }
+    h1 {
+      margin-top: 6rem;
+      margin-bottom: .5rem;
+      font-size: 2rem;
+      width: 90%;
+
       color: $white;
-  }
- h3 {
-    text-align: center;
-    color: $white;
-    width: 70%;
+    }
+    h3 {
+
+      color: $white;
+      width: 70%;
+      font-style: italic;
+
+    }
+
+
+    .button {
+      margin-top: 1rem;
+    }
 
   }
-  h3 {
-    font-style: italic;
-  }
-
-  .button {
-    margin-top: 1rem;
-  }
-}
-.display_mobile_image_first, .display_mobile_image_second {
-  transition: all .5s ease;
-  transform: translateX(0px);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  bottom: -30%;
 
 }
-.display_mobile_image_first {
-  width: 50vw;
-  height: 70vh;
+.hero__mobile__wrap {
   position: absolute;
-  z-index: 2;
-  left: 8%;
-  background-image: url('/themes/wordplate/assets/media/Bella.png');
+  z-index: 3;
+  right: 5%;
+  top: 3%;
+  width: 30vw;
+  height: 60vh;
 
+  flex-flow: row nowrap;
+  @include bp(small) {
+    max-width: 400px;
+    right: 0;
+    width: 80vw;
+    top: 65%;
+    left: 0;
+    justify-content: center;
+    display: flex;
+  }
 
-}
-.display_mobile_image_second {
-  width: 65vw;
-  height: 80vh;
-  position: absolute;
-  z-index: 1;
-  right: 4%;
-  background-image: url('/themes/wordplate/assets/media/Choose_Your_Role.png');
+  .display_mobile_image_first, .display_mobile_image_second {
+    transition: all .5s ease;
+    transform: translateX(0px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
 
+  }
+  .display_mobile_image_first {
+    width: 200px;
+    height: 55vh;
+    z-index: 2;
+    background-image: url('/themes/wordplate/assets/media/Bella.png');
+    @include bp(small) {
+      width: 200px;
+      left: 20%;
+    }
+  }
+  .display_mobile_image_second {
+    width: 250px;
+    height: 65vh;
+    left: 17%;
+    z-index: 1;
+
+    background-image: url('/themes/wordplate/assets/media/Choose_Your_Role.png');
+    @include bp(small) {
+      width: 250px;
+      left: 35%;
+
+    }
+
+  }
 }
 
 .hide {
   transform: translateY(50px);
   opacity: 0;
+  @include bp(medium) {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }

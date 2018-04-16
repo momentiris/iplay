@@ -7,7 +7,7 @@ header {
   width: 100vw;
   height: 100vh;
   right: 0;
-  transform: translateX(100vh);
+  transform: translateX(100vw);
   transition: transform .3s ease;
   background: $black;
   padding-top: 7rem;
@@ -120,6 +120,9 @@ li.current-menu-item {
 }
 .menu--active {
   transform: translateX(0px);
+  @include bp(large) {
+    transform: translateX(60vw);
+  }
 
 }
 

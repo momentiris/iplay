@@ -15,20 +15,24 @@
         <h2 class="hidden role__coach">I'm a coach.</h2>
         <h2 class="hidden role__scout">I'm a scout.</h2>
         <h2 class="hidden role__fan">I'm a fan.</h2>
-        <span class="role_back">
-            Go back ←
-        </span>
+        <span class="role_back">Go back ←</span>
         <span class="toggle_role_nav">Close x </span>
     </div>
+
     <section class="hero__wrap">
+        <div class="hero__intro__wrap">
+
         <h1><?php the_field('hero_header') ?></h1>
         <h3><?php the_field('under_hero_header') ?></h4>
         <div class="button">
             <span>GET THE APP</span>
         </div>
+    </div>
+        <div class="hero__mobile__wrap">
 
-        <div class="display_mobile_image_first hide"></div>
-        <div class="display_mobile_image_second hide "></div>
+            <div class="display_mobile_image_first hide"></div>
+            <div class="display_mobile_image_second hide "></div>
+        </div>
     </section><!-- hero__wrap -->
 
     <?php $args = array(
