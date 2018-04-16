@@ -6,109 +6,162 @@
   align-items: center;
   text-align: center;
 
-    .branding, .insurance
-    {
-      background-color: $lightgreen;
-    }
-    .branding {
-        height:80vh;
-    }
-
-    .insurance
-    {
-      padding-left: 15px;
-      padding-right: 15px;
-        height:95vh;
-    }
-
-    .sections
-    {
-      display: flex;
-      align-items: center;
-      flex-flow: column;
-
-      width:100vw;
-
-      color: $white;
-      h1 {
-
-        font-size: 2rem;
-      }
-      .role {
-        text-decoration: underline;
-        margin: 1rem;
-      }
-        p
-        {
-
-          font-size: 1.1rem;
-
-          width: 85%;
-          line-height: 1.45;
-        }
-    }
-    .mobile_image
-    {
-      background-size: cover;
-      background-position:top;
-      background-repeat: no-repeat;
-      width:80vw;
-      height:60vh;
-    }
-    .b
-    {
-      background-image: url('/themes/wordplate/assets/media/Brand.png');
-    }
-
-    .i
-    {
-      background-image: url('/themes/wordplate/assets/media/Insurance.png');
-    }
-    .c
-    {
-      background-image: url('/themes/wordplate/assets/media/Communications.png');
-    }
+  .branding, .insurance
+  {
+    background-color: $lightgreen;
   }
-  .newsletter
+  .branding {
+    height:80vh;
+  }
+
+  .insurance
+  {
+    padding-left: 15px;
+    padding-right: 15px;
+    height:95vh;
+  }
+
+  .sections
   {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-flow: column nowrap;
+    flex-flow: column;
     width:100vw;
-    height: 40vh;
-    text-align: center;
-
-    h1 {
-      margin:0;
+    color: $white;
+    @include bp(medium)
+    {
+      height:60vh;
     }
+    h1 {
 
+      font-size: 2rem;
+    }
+    .role {
+      text-decoration: underline;
+      margin: 1rem;
+    }
     p
     {
+      @include bp(small)
+      {
+        font-size: 1.1rem;
+        width: 85%;
+        line-height: 1.45;
+      }
+      @include bp(medium)
+      {
+        width:95%;
+        font-size:1.5rem;
+      }
+    }
+  }
+  @include bp(medium)
+  {
+    .left_content
+    {
+      width:500px;
+      align-self: center;
+    }
+    .right_content
+    {
+      width:500px;
+      align-self: center;
+
+    }
+  }
+  .mobile_image
+  {
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+    width:90vw;
+    max-width:400px;
+    height:80vh;
+    @include bp(medium)
+    {
+      width:40vw;
+      height:60vh;
+    }
+  }
+  .b
+  {
+    background-image: url('/themes/wordplate/assets/media/Brand.png');
+  }
+
+  .i
+  {
+    background-image: url('/themes/wordplate/assets/media/Insurance.png');
+  }
+  .c
+  {
+    background-image: url('/themes/wordplate/assets/media/Communications.png');
+  }
+}
+.newsletter
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  width:100vw;
+  height: 40vh;
+  text-align: center;
+    @include bp(medium)
+    {
+      height:60vh;
+    }
+
+  h1 {
+    margin:0;
+    @include bp(medium)
+    {
       font-weight: bold;
-      width: 85%;
+      width:85%;
       line-height: 1.45;
-    }
-    input {
-      margin: 1rem;
-      padding:.5rem;
-      width: 90%;
-      height: 50px;
-      border: 2px solid black;
-      border-radius: 7px;
+      font-size: 3.8rem;
     }
   }
 
-  .communications {
-      height:90vh;
-    h1, p {
-      color: $black;
+  p
+  {
+    font-weight: bold;
+    width: 85%;
+    line-height: 1.45;
 
-    }
-    p {
-
-    }
-    img {
-
-    }
   }
+  input {
+    margin: 1rem;
+    padding:.5rem;
+    width: 90%;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 7px;
+      @include bp(medium)
+      {
+        width:50%;
+      }
+  }
+}
+
+.communications {
+  height:90vh;
+  h1, p
+  {
+    color: $black;
+  }
+}
+@include bp(medium) {
+
+  .sections:nth-child(even) {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+
+  }
+  .sections:nth-child(odd) {
+    align-items: flex-end;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-around;
+  }
+
+}

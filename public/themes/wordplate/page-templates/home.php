@@ -73,30 +73,35 @@
 
 <div class="sections_home">
     <section class="branding sections">
+        <div class="right_content">
         <h1><?php the_field('branding_header'); ?></h1>
         <p><?php the_field('branding_content');?></p>
 
         <p class="role role_button">What's your role?</p>
-
+    </div>
         <div class="mobile_image b">
         </div>
     </section><!-- branding -->
 
     <section class="communications sections">
+        <div class="left_content">
         <h1><?php the_field('communications_header')?></h1>
         <p><?php the_field('communications_content')?></p>
 
         <p class="role role_button">What's your role?</p>
-
+</div>
         <div class="mobile_image c">
         </div>
     </section><!-- communications -->
 
     <section class="insurance sections">
+        <div class="right_content">
+
         <h1><?php the_field('insurance_header')?></h1>
         <p><?php the_field('insurance_content')?></p>
 
         <p class="role role_button">What's your role?</p>
+        </div>
 
         <div class="mobile_image i">
         </div>
