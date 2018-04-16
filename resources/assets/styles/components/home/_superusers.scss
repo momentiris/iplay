@@ -8,6 +8,10 @@
   align-items: center;
   text-align: center;
   padding-top: 7rem;
+  @include bp(medium) {
+    height: 60vh;
+    padding-top: 0;
+  }
   .superusers__info {
     display: flex;
     flex-flow: column;
@@ -16,8 +20,14 @@
 
     h2 {
       margin-bottom: 0;
+      @include bp(medium) {
+        display: none;
+      }
     }
     p {
+      @include bp(medium) {
+        display: none;
+      }
       font-weight: 500;
       width: 85%;
       line-height: 1.45;
