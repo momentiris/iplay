@@ -2,7 +2,7 @@
 <div class="foot__wrap">
 
 
-    <div class="">
+    <div>
         <h4>Company</h4>
         <ul>
             <li>About</li>
@@ -10,7 +10,7 @@
             <li>Help</li>
         </ul>
     </div>
-    <div class="">
+    <div>
         <h4> Business </h4>
         <ul>
             <li>Athletes</li>
