@@ -2,6 +2,7 @@ import './components/hamburger';
 import './components/logotype';
 import './components/carousel';
 import './components/rolenav';
+import { getMobileOperatingSystem } from './components/getMobileOperatingSystem';
 
 const navicon = document.querySelector('.main_nav_hamburger');
 const naviconInner = navicon.querySelector('.hamburger-inner');
@@ -21,4 +22,17 @@ window.addEventListener('scroll', (e) => {
     hero_mob_right.classList.remove('hide');
   }
 
+})
+
+const camoCTA = [...document.querySelectorAll('.camoCTA')];
+
+camoCTA.forEach(button=> {
+  button.addEventListener('click', () => {
+    if (getMobileOperatingSystem() == 'iOS') {
+      window.location.href = "https://itunes.apple.com/se/app/iplay-sport/id1068927526?l=en&mt=8";
+    } else if (getMobileOperatingSystem() == 'Android' || getMobileOperatingSystem() == 'Windows Phone' || getMobileOperatingSystem() == 'unknown') {
+      window.location.href = "https://play.google.com/store/apps/details?id=com.iplay&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1";
+    }
+
+  });
 })

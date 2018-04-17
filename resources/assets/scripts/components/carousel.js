@@ -3,6 +3,19 @@ let touchStart;
 let touchEnd;
 let isRightSwipe;
 const elements = [...document.querySelectorAll('.superuser__slide')];
+const arrows = [...document.querySelectorAll('.arrow')];
+
+arrows.forEach(arrow => {
+  arrow.addEventListener('click', (e) => {
+    if (e.target.classList.contains('left')) {
+      isRightSwipe = false;
+      swipe();
+    } else {
+      isRightSwipe = false;
+      swipe();
+    }
+  })
+})
 
 document.addEventListener('touchstart', (e) => {
   touchStart = e.changedTouches[0].screenX;
@@ -23,7 +36,7 @@ const compare = () => {
   const swipe = () => {
     elements.forEach(child => {
       let currentPosition = child.dataset.position;
-      console.log(currentPosition);
+
       let positionNext = parseInt(child.dataset.positionnext);
       let reverse = currentPosition == 0 ? 2 : currentPosition - 1;
 

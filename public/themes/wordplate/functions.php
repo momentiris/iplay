@@ -58,6 +58,9 @@ add_filter('excerpt_length', function () {
 // Register superuser custom post type.
 require get_template_directory().'/includes/post-types/super-user.php';
 
+// Register role custom post type.
+require get_template_directory().'/includes/post-types/role.php';
+
 // Register acf for home.
 require get_template_directory().'/includes/acf/home.php';
 
@@ -76,3 +79,22 @@ add_action( 'init', 'gp_register_taxonomy_for_object_type' );
 function gp_register_taxonomy_for_object_type() {
     register_taxonomy_for_object_type( 'post_tag', 'superuser' );
 };
+
+
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+
+		height:65px;
+		width:150px;
+		background-size: contain;
+		background-repeat: no-repeat;
+        	padding-bottom: 30px;
+        }
+
+		body.login {
+			background: black;
+		}
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );

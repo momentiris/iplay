@@ -1,6 +1,7 @@
 <?php /* Template Name: Home */ ?>
 
 <?php get_header(); ?>
+
     <div class="role__nav nav_nav">
         <div class="role__nav-intro">
             <h1>Whats your role?</h1>
@@ -10,6 +11,9 @@
         <div class="role__info role__info-hide">
 
         </div>
+		<div class="button camoCTA">
+			GET THE APP
+		</div>
         <h2 class="hidden role__athlete">I'm an athlete.</h2>
         <h2 class="hidden role__influencer">I'm an influencer.</h2>
         <h2 class="hidden role__coach">I'm a coach.</h2>
@@ -24,7 +28,7 @@
 
         <h1><?php the_field('hero_header') ?></h1>
         <h3><?php the_field('under_hero_header') ?></h4>
-        <div class="button">
+        <div class="button camoCTA">
             <span>GET THE APP</span>
         </div>
     </div>
@@ -50,11 +54,12 @@
             <p>We’re working close with professional athletes in order to get the best possible experience for everyone. Iplay is made for real athlethes, by real atheletes.</p>
         </section>
         <div class="superusers__slider">
-
+            <div class="arrow left"></div>
+            <div class="arrow right"></div>
             <?php foreach ($superUsers as $key => $superUser): ?>
                 <div data-position="<?php echo $key ?>" data-positionnext="<?php echo ($key + 1) == 3 ? 0 : ($key + 1); ?>"class="superuser__slide" style="background-image: url('<?php the_field('superuser_image', $superUser->ID); ?>')">
                     <h3><?php the_field('superuser_name', $superUser->ID); ?></h3>
-                    <span><?php the_field('superuser_quote') ?></span>
+                    <p><?php the_field('superuser_sport', $superUser->ID) ?></p>
                     <div class="superuser__player__info">
                     </div>
                 </div>
@@ -123,4 +128,5 @@
 
 
 </section>
+
 <?php get_footer(); ?>

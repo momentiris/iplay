@@ -11,7 +11,7 @@
         </ul>
     </div>
     <div>
-        <h4> Business </h4>
+        <h4 class="business"> Business </h4>
         <ul>
             <li>Athletes</li>
             <li>Partnership</li>

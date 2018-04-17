@@ -5,8 +5,8 @@ declare(strict_types=1);
 $fields = [
 
         acf_text([
-            'name' => 'superuser_name',
-             'label' => 'Name',
+            'name' => 'role_name',
+             'label' => 'Role',
              'required' => true,
              'maxlength' => 30,
         ]),

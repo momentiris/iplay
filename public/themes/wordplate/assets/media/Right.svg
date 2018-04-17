@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="50px" viewBox="0 0 29 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-1352.000000, -737.000000)" fill="#A0A0A0">
+            <g id="Section-2" transform="translate(0.000000, 520.000000)">
+                <path d="M1353.2997,258.561216 C1351.5678,260.293115 1351.5678,263.102019 1353.2997,264.832464 C1355.02927,266.563587 1357.83818,266.563587 1359.57017,264.832464 L1379.70049,244.70127 C1381.43317,242.96937 1381.43317,240.161242 1379.70049,238.430022 L1359.57017,218.298924 C1358.7049,217.433751 1357.56892,217 1356.4345,217 C1355.30007,217 1354.1641,217.433751 1353.29892,218.298924 C1351.56703,220.030048 1351.56703,222.839728 1353.29892,224.570075 L1365.85995,237.131097 L1370.20541,241.57355 L1353.2997,258.561216 Z" id="Right" transform="translate(1366.500000, 241.565403) rotate(360.000000) translate(-1366.500000, -241.565403) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

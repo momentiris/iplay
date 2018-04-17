@@ -7,11 +7,23 @@
   flex-flow: column nowrap;
   padding-left: 2rem;
   padding-top: 5rem;
+  .button {
+  position: absolute;
+  bottom: 12.5% !important;
+  font-family: $font-stack;
+  font-weight: bold;
+  left: calc(50% - 100px);
+  @include bp(medium) {
+    left: 13%;
+  }
+  }
 
   h2
   {
     color: $white;
+    cursor: pointer;
   }
+
   .role__nav-intro {
     display: flex;
     flex-flow: column nowrap;
@@ -22,11 +34,13 @@
       font-style: italic;
     }
     span.line {
-      width: 30%;
+      width: 100px;
       height: 5px;
       background: $lightgreen;
       position: sticky;
-
+      @include bp(medium) {
+        width: 100px;
+      }
     }
   }
   .role__info {
@@ -44,6 +58,7 @@
     h2 {
       color: $white;
       font-weight: 500;
+      cursor: default;
 
     }
     p {
@@ -58,6 +73,7 @@
     color: $white;
     position: absolute;
     font-weight: 500;
+    cursor: pointer;
   }
   .toggle_role_nav {
     bottom: 2%;
@@ -109,5 +125,7 @@
   text-decoration: underline;
   font-size: 2rem;
   transition-delay: .2s;
+  cursor: none;
+  user-select: none;
 
 }

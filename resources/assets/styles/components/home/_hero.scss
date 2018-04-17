@@ -63,10 +63,10 @@
   flex-flow: row nowrap;
   @include bp(small) {
     max-width: 400px;
-    right: 0;
+
     width: 80vw;
     top: 65%;
-    left: 0;
+    left: calc(50% - 150px);
     justify-content: center;
     display: flex;
   }
@@ -80,6 +80,7 @@
     position: absolute;
     bottom: 0;
 
+
   }
   .display_mobile_image_first {
     width: 200px;
@@ -88,7 +89,7 @@
     background-image: url('/themes/wordplate/assets/media/Bella.png');
     @include bp(small) {
       width: 200px;
-      left: 20%;
+      left: 0%;
     }
   }
   .display_mobile_image_second {
@@ -100,7 +101,7 @@
     background-image: url('/themes/wordplate/assets/media/Choose_Your_Role.png');
     @include bp(small) {
       width: 250px;
-      left: 35%;
+      left: 20%;
 
     }
 

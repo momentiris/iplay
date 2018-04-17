@@ -11,6 +11,7 @@
   @include bp(medium) {
     height: 60vh;
     padding-top: 0;
+    flex-flow: row-reverse nowrap;
   }
   .superusers__info {
     display: flex;
@@ -32,18 +33,26 @@
       width: 85%;
       line-height: 1.45;
     }
+    .role_button {
+      @include bp(medium) {
+         width: 200px;
+      }
+    }
   }
 
   .superusers__slider {
-
     overflow: hidden;
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
     height: 450px;
     position: relative;
-
-
+    align-items: center;
+    justify-content: space-between;
+    @include bp(medium) {
+      width: 140%;
+      overflow: visible;
+    }
     .superuser__slide {
       width: 225px;
       position: absolute;
@@ -58,7 +67,7 @@
       background-repeat: no-repeat;
       background-position: center;
 
-      h3, span {
+      h3, p {
         transform: skew(10deg);
         padding-left: 2rem;
         position: absolute;
@@ -66,10 +75,25 @@
         color: $white;
         z-index: 1;
         text-align: left;
+        @include bp(medium) {
+          bottom: 18%;
+        }
+      }
+      p {
+        font-size: .75rem;
+        bottom: 15%;
+        left: 1.75%;
+        @include bp(small) {
+          bottom: 13%;
+          left: 2%;
+        }
       }
       h3 {
         font-weight: 500;
         width: 50%;
+        @include bp(medium) {
+          width: 100%;
+        }
       }
 
       .superuser__player__info {
@@ -102,10 +126,35 @@
       border: 2px solid black;
       width: 70%;
       height: 85px;
+      @include bp(medium) {
+        width: 350px;
+      }
       span {
         font-weight: 500;
         width: 75%;
+
       }
     }
   }
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+  @include bp(medium) {
+    display: block;
+  }
+}
+.arrow.left {
+  background-image: url('/themes/wordplate/assets/media/Left.svg');
+  margin-left: 3%;
+
+}
+.arrow.right {
+  background-image: url('/themes/wordplate/assets/media/Right.svg');
+  margin-right: 3%;
 }

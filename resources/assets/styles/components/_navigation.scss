@@ -120,7 +120,7 @@ li.current-menu-item {
 }
 .menu--active {
   transform: translateX(0px);
-  @include bp(large) {
+  @include bp(medium) {
     transform: translateX(60vw);
   }
 

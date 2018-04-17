@@ -70,6 +70,9 @@ goBack.addEventListener('click', (e) => {
 
 roles.forEach((role, index) => {
   role.addEventListener('click', e => {
+    if (e.target.classList.contains('role--active')) {
+      return;
+    }
     roleNavIntro.classList.add('hidden__inside');
 
     roles.forEach(allButTarget => {

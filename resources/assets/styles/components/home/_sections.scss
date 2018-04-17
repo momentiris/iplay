@@ -39,13 +39,14 @@
     .role {
       text-decoration: underline;
       margin: 1rem;
+      cursor: pointer;
     }
     p
     {
       @include bp(small)
       {
         font-size: 1.1rem;
-        width: 85%;
+
         line-height: 1.45;
       }
       @include bp(medium)
